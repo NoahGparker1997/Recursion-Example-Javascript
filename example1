@@ -1,0 +1,27 @@
+function countDown(num)
+{
+  if(num <=0) // this is the base
+  {
+    console.log("All Done!");
+     return;
+  }
+    console.log(num);
+    num--; // this keeps subtracting one everytime it runs
+    countDown(num);
+  }
+  countDown(4) // this is the input that is diffrent from the base
+  
+  // The above code runs like this
+  // countDown(4);
+  //      4
+  //      countDown(3);
+  //           3
+  //           countDown(2);
+  //                2
+  //                countDown(1);
+  //                     1
+  //                     countDown(0);
+  //                          "All done!"
+  //
+  //
+  //
